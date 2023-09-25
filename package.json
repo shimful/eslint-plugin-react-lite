@@ -1,0 +1,33 @@
+{
+  "name": "@shimful/eslint-plugin-react-lite",
+  "version": "0.0.0",
+  "description": "foo",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "license": "MIT",
+  "author": "Joachim Viide <jviide@iki.fi>",
+  "main": "./lib/index.js",
+  "exports": "./lib/index.js",
+  "engines": {
+    "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
+  },
+  "scripts": {
+    "lint": "eslint --max-warnings 0 .",
+    "test": "node --test",
+    "test:watch": "node --test --watch ."
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-eslint-plugin": "^5.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3"
+  },
+  "peerDependencies": {
+    "eslint": ">=7"
+  }
+}

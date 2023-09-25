@@ -1,0 +1,1 @@
+# @shimful/eslint-plugin-react-lite [![tests](https://github.com/shimful/eslint-plugin-react-lite/actions/workflows/tests.yml/badge.svg)](https://github.com/shimful/eslint-plugin-react-lite/actions/workflows/tests.yml)
