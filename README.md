@@ -2,6 +2,82 @@
 
 This package is reimplements the most essential (with some definition of most essential) eslint-plugin-react rules, and aims to do it with zero dependencies.
 
+## Configuration
+
+```json
+{
+  "settings": {
+    "reactLite": {
+      // The pragma to use, defaults to "React"
+      "pragma": "React",
+      // Fragment to use, defaults to "Fragment"
+      "fragment": "Fragment",
+      // The jsxFactory, defaults to `${pragma}.createElement`
+      // Can be overwritten on per-file basis, e.g.:
+      //   /* @jsx Preact.h */
+      "jsxFactory": "React.createElement",
+      // The jsxFactory, defaults to `${pragma}.${fragment}`
+      // Can be overwritten on per-file basis, e.g.:
+      //   /* @jsxFrag Preact.Fragment */
+      "jsxFragmentFactory": "React.Fragment"
+    },
+    // Defaults to []
+    "linkComponents": [
+      { "name": "Link", "linkAttribute": "to" }
+    ],
+    // Defaults to []
+    "formComponents": [
+      { "name": "Form", "formAttribute": "action" }
+    ]
+  }
+}
+```
+
+## Rules
+
+### jsx-key
+
+```json
+{
+  "rules": {
+    "react-lite/jsx-key": ["error", {
+      "checkFragmentShorthand": false,
+      "checkKeyMustBeforeSpread": false,
+      "warnOnDuplicates": true
+    }]
+  }
+```
+
+### jsx-no-comment-textnodes
+
+```json
+{
+  "rules": {
+    "react-lite/jsx-no-comment-textnodes": "error"
+  }
+```
+
+Notes:
+
+ * Autofixes not implemented.
+
+### jsx-no-target-blank
+
+```json
+{
+  "rules": {
+    "react-lite/jsx-no-comment-textnodes": ["error", {
+      "allowReferrer": false,
+      "enforceDynamicLinks": "always", // Options: "always", "never".
+      "warnOnSpreadAttributes": false,
+      "links": true,
+      "forms": false
+    }]
+  }
+```
+
+## Status
+
 These are the current recommended set of eslint-plugin-react rules. Included are some notes whether they're needed anymore, or better handled by other mechanisms like TypeScript's type checks.
 
 |    | implemented | rule                       | notes |
@@ -32,3 +108,7 @@ These are the current recommended set of eslint-plugin-react rules. Included are
  * 💀 = obsolete
  * ❓ = needs investigation
  * TS = taken care by TypeScript checks
+
+## License
+
+This library is licensed under the MIT license. See [LICENSE](./LICENSE).

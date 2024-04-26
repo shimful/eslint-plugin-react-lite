@@ -75,7 +75,7 @@ ruleTester.run("jsx-key", rule, {
           <></>
         ]
       `,
-      settings: { react: { jsxFragmentFactory: "Other.Fragment" } },
+      settings: { reactLite: { jsxFragmentFactory: "Other.Fragment" } },
       options: [{ checkFragmentShorthand: true }],
       errors: [
         {
@@ -95,7 +95,7 @@ ruleTester.run("jsx-key", rule, {
         <></>
       ]`,
       settings: {
-        react: {
+        reactLite: {
           pragma: "Preact",
           fragment: "Pfragment",
         },
