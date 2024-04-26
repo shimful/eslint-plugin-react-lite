@@ -21,7 +21,7 @@ These are the current recommended set of eslint-plugin-react rules. Included are
 | 💀 |  | no-find-dom-node           | Doesn't seem to be a part of @types/react. |
 | 💀 |  | no-is-mounted              | Applies only to the obsolete `React.createClass` and `create-react-class`. Not worth supporting? |
 | ❓   |  | no-render-return-value     | Doesn't allow usage of ReactDOM.render's return value, as in the future it'll be `void`. Wouldn't typings take care of this? |
-| 💀/✅  |  | no-string-refs             | | React 19 removes support for string refs, so types _probably_ will take care of this in the near future. |
+| 💀❓ |  | no-string-refs             | React 19 removes support for string refs, so types _probably_ will take care of this in the near future. |
 | ✅  |  | no-unescaped-entities      | |
 | TS |  | no-unknown-property        | Taken care of by TS, except arbitrary aria-* and data-* props are allowed |
 | ❓   |  | prop-types                 | Would this be taken care of by TS? |
