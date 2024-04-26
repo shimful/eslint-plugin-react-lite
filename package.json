@@ -9,6 +9,10 @@
   ],
   "license": "MIT",
   "author": "Joachim Viide <jviide@iki.fi>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shimful/eslint-plugin-react-lite.git"
+  },
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
   "engines": {
