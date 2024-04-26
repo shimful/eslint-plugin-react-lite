@@ -17,9 +17,14 @@
   "scripts": {
     "lint": "eslint --max-warnings 0 .",
     "test": "node --test",
-    "test:watch": "node --test --watch ."
+    "test:watch": "node --test --watch .",
+    "changeset": "changeset",
+    "bump": "changeset version",
+    "release": "changeset publish"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.1",
     "eslint": "^8.19.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-eslint-plugin": "^5.0.0",
