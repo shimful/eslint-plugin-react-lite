@@ -4,7 +4,7 @@ This package is reimplements the most essential (with some definition of most es
 
 ## Configuration
 
-```json
+```jsonc
 {
   "settings": {
     "reactLite": {
@@ -37,7 +37,7 @@ This package is reimplements the most essential (with some definition of most es
 
 ### jsx-key
 
-```json
+```jsonc
 {
   "rules": {
     "react-lite/jsx-key": ["error", {
@@ -50,7 +50,7 @@ This package is reimplements the most essential (with some definition of most es
 
 ### jsx-no-comment-textnodes
 
-```json
+```jsonc
 {
   "rules": {
     "react-lite/jsx-no-comment-textnodes": "error"
@@ -63,7 +63,7 @@ Notes:
 
 ### jsx-no-target-blank
 
-```json
+```jsonc
 {
   "rules": {
     "react-lite/jsx-no-comment-textnodes": ["error", {
