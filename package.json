@@ -1,7 +1,7 @@
 {
   "name": "@shimful/eslint-plugin-react-lite",
   "version": "0.0.1",
-  "description": "foo",
+  "description": "",
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -14,6 +14,12 @@
   "engines": {
     "node": ">= 18.0.0"
   },
+  "publishConfig": {
+    "provenance": true
+  },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "lint": "eslint --max-warnings 0 .",
     "test": "node --test",
