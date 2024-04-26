@@ -5,7 +5,7 @@ This package is reimplements the most essential (with some definition of most es
 These are the current recommended set of eslint-plugin-react rules. Included are some notes whether they're needed anymore, or better handled by other mechanisms like TypeScript's type checks.
 
 |    | implemented | rule                       | notes |
-|----|----------------------------|-|
+|----|--|--------------------------|-|
 | ❓  |  | display-name               | Is this relevant in 2023? |
 | ✅ | 🎉 | jsx-key                    | |
 | ✅ | 🎉 | jsx-no-comment-textnodes   | |
