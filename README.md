@@ -82,7 +82,7 @@ These are the current recommended set of eslint-plugin-react rules. Included are
 
 |    | implemented | rule                       | notes |
 |----|--|--------------------------|-|
-| ❓  |  | display-name               | Is this relevant in 2023? |
+| ✅ |  | display-name               | Useful for context providers in devtools, see #3. |
 | ✅ | 🎉 | jsx-key                    | |
 | ✅ | 🎉 | jsx-no-comment-textnodes   | |
 | TS |  | jsx-no-duplicate-props     | TypeScript complains about duplicate props. |
